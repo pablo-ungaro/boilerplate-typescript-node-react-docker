@@ -1,0 +1,153 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 22px 0;
+  text-align: center;
+  background-color: #9e0f02;
+}
+
+.header input {
+  width: 40%;
+  max-width: 400px;
+  height: 35px;
+  border-radius: 4px;
+  outline: 0;
+  border: 1px solid #ccc;
+  background: white url('search.png') left no-repeat;
+  padding-left: 33px;
+  font-weight: 600;
+}
+
+.tooltip-container {
+  text-align: center;
+  margin-top: -18px;
+}
+
+.tooltip {
+  position: relative;
+  width: 50%;
+}
+
+.tooltip .tooltiptext {
+  width: 80%;
+  min-width: 273px;
+  max-width: 500px;
+  height: auto;
+  position: fixed;
+  margin-top: 205px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 0px 13px 0px rgba(136, 136, 136, 1);
+  text-align: initial;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -14px;
+  border-width: 14px;
+  border-style: solid;
+  border-color: transparent transparent #f2f2f2 transparent;
+}
+
+.icon-search {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.search-list-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 400px;
+  overflow-y: auto;
+}
+.search-list-item a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  cursor: pointer;
+}
+
+.search-list-item li:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.search-list-item li {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.search-list-item p {
+  margin: 0;
+  padding: 5px 0px 5px 20px;
+}
+
+.suggestion-container p.active {
+  background-color: #e6e6e6;
+}
+
+.list-item-content {
+  padding: 13px;
+  padding-left: 20px;
+  position: relative;
+  display: inline-flex;
+  height: 50px;
+}
+
+.list-item-content span {
+  font-weight: 600;
+  font-size: larger;
+  padding-top: 14px;
+  padding-left: 10px;
+}
+
+.list-item-content li {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.suggestion {
+  text-align: right;
+  margin-right: 10px !important;
+  margin-top: 5px;
+  color: #a6a6a6;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.suggestion:hover {
+  background-color: none;
+}
+.other-search {
+  color: #595959;
+  padding: 10px 10px 10px 20px !important;
+}
+.black {
+  color: black;
+}
+
+.suggestion-container:hover {
+  background-color: transparent !important;
+}
+
+.suggestion-container p:hover {
+  background-color: #e6e6e6 !important;
+}
